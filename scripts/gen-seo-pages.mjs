@@ -176,6 +176,8 @@ const today = new Date().toISOString().slice(0, 10);
 const urls = [
   ['/', '1.0'],
   ['/merge/', '0.8'], ['/split/', '0.8'], ['/pdf-to-jpg/', '0.8'], ['/jpg-to-pdf/', '0.8'], ['/rotate/', '0.8'],
+  ['/watermark/', '0.8'], ['/protect/', '0.8'], ['/page-numbers/', '0.8'], ['/organize/', '0.8'], ['/remove-metadata/', '0.8'],
+  ['/what-is-pdf/', '0.7'],
   ...PAGES.map((p) => [`/${p.slug}/`, '0.9']),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
