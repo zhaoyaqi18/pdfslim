@@ -1,0 +1,24 @@
+{
+  "name": "pdf-slim",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Slim your PDF in seconds — 100% local, no sign-up, compress to an exact target size.",
+  "scripts": {
+    "dev": "vite",
+    "gen:seo": "node scripts/gen-seo-pages.mjs",
+    "prebuild": "node scripts/gen-seo-pages.mjs",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@pdfsmaller/pdf-encrypt-lite": "^1.2.0",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "sortablejs": "^1.15.7"
+  },
+  "devDependencies": {
+    "vite": "^5.4.19"
+  }
+}

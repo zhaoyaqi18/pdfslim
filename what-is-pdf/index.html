@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is a PDF? Format Origins, Features &amp; How It Works | PDF Slim</title>
+  <meta name="description" content="Learn what a PDF file really is — the format's origins (Camelot Project, ISO 32000), its core features, and how it works under the hood. A friendly, accurate explainer." />
+  <meta name="theme-color" content="#0EA5E9" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container-wide header-inner">
+      <a class="brand" href="../">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+        <span>PDF&nbsp;Slim</span>
+      </a>
+      <nav class="main-nav" aria-label="Tools">
+        <a href="../">Compress</a>
+        <a href="../merge/">Merge</a>
+        <a href="../split/">Split</a>
+        <a href="../pdf-to-jpg/">PDF to JPG</a>
+        <a href="../jpg-to-pdf/">JPG to PDF</a>
+        <a href="../rotate/">Rotate</a>
+        <a href="../watermark/">Watermark</a>
+        <a href="../protect/">Protect</a>
+        <a href="../page-numbers/">Page Numbers</a>
+        <a href="../organize/">Organize</a>
+        <a href="../remove-metadata/">Clean Metadata</a>
+        <a href="./" class="active">What is a PDF?</a>
+      </nav>      <a class="tip-btn" href="https://ko-fi.com/yugutou" target="_blank" rel="noopener" aria-label="Tip us on Ko-fi">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <span>Tip&nbsp;Us</span>
+      </a>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="container article">
+    <header class="article-header">
+      <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Learn</span>
+      <h1>What is a PDF? A friendly guide to the world's most trusted document format</h1>
+      <p class="page-sub">The format's origins, why it looks the same everywhere, and what's actually inside the file — explained without jargon.</p>
+    </header>
+
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-is">What is a PDF?</a></li>
+        <li><a href="#history">Where did it come from?</a></li>
+        <li><a href="#features">Core features</a></li>
+        <li><a href="#how-it-works">How it works, in plain words</a></li>
+        <li><a href="#why-large">Why are some PDFs so large?</a></li>
+        <li><a href="#faq">Common questions</a></li>
+      </ol>
+    </nav>
+
+    <section class="article-section" id="what-is">
+      <h2>What is a PDF?</h2>
+      <p><strong>PDF</strong> stands for <strong>Portable Document Format</strong>. It's a file format designed to capture a document exactly as it was meant to look — fonts, layout, images, spacing — and display it identically on any device, anywhere in the world.</p>
+      <p>Think of it as a <strong>photograph of a printed page</strong>. When someone sends you a PDF, they're sending you the finished page: what you see is what they designed, whether you open it on a phone, a laptop, a tablet, or a printer. No missing fonts, no shifted text, no broken layouts.</p>
+      <p>Unlike Word documents or web pages, a PDF is <strong>not meant to be easily edited</strong>. That's a feature, not a bug: it's why governments, courts, banks, universities and businesses trust it for anything official.</p>
+    </section>
+
+    <section class="article-section" id="history">
+      <h2>Where did it come from?</h2>
+      <p>The story starts in <strong>1991</strong>, inside Adobe Systems. Co-founder <strong>John Warnock</strong> wrote a memo called <strong>"The Camelot Project"</strong>, describing a dream: a way to send any document to anyone and have it print exactly as intended — regardless of the software, fonts or computer used to create it.</p>
+      <p>At the time, that was a real problem. A document made on one system often looked broken on another: fonts were missing, text reflowed, layouts collapsed. Warnock wanted a "digital paper" — a universal format that behaved like a printed page.</p>
+      <p>The result was <strong>PDF 1.0</strong>, released in <strong>1993</strong> alongside Adobe Acrobat. For years it grew quietly, and in <strong>2008</strong> it became an official international standard: <strong>ISO 32000-1</strong>. Today, the PDF format is maintained by the ISO (International Organization for Standardization), which is why it will never be locked to one company — it belongs to the world.</p>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-year">1991</span><span>Camelot Project memo by John Warnock</span></div>
+        <div class="timeline-item"><span class="timeline-year">1993</span><span>PDF 1.0 released with Adobe Acrobat</span></div>
+        <div class="timeline-item"><span class="timeline-year">2008</span><span>Becomes international standard ISO 32000-1</span></div>
+        <div class="timeline-item"><span class="timeline-year">Today</span><span>Used by governments, courts, banks and billions of documents</span></div>
+      </div>
+    </section>
+
+    <section class="article-section" id="features">
+      <h2>Core features</h2>
+      <p>What makes PDF the default for official documents? Six properties do most of the work:</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>1 · Fixed layout</h3>
+          <p>A page in a PDF is a finished canvas. Text and images are placed at exact positions — they never reflow or shift between devices.</p>
+        </div>
+        <div class="feature-card">
+          <h3>2 · Cross-platform</h3>
+          <p>Windows, macOS, Linux, Android, iOS — every modern system can open a PDF, and it looks the same everywhere.</p>
+        </div>
+        <div class="feature-card">
+          <h3>3 · Font embedding</h3>
+          <p>The exact fonts used are (usually) stored inside the file, so the document never depends on what fonts the viewer happens to have.</p>
+        </div>
+        <div class="feature-card">
+          <h3>4 · Compression built in</h3>
+          <p>Text, images and graphics each have dedicated compression methods. That's what makes a 50-page document fit in a few megabytes — and why tools like ours can slim them further.</p>
+        </div>
+        <div class="feature-card">
+          <h3>5 · Security &amp; permissions</h3>
+          <p>PDFs can be password-protected, and authors can restrict printing, copying or editing — the foundation of our <a href="../protect/">Protect</a> tool.</p>
+        </div>
+        <div class="feature-card">
+          <h3>6 · Searchable text layer</h3>
+          <p>Text in a PDF isn't just pixels: it can be selected, searched and copied — which is also why metadata (author, dates) lives inside the file, and why our <a href="../remove-metadata/">Clean Metadata</a> tool exists.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section" id="how-it-works">
+      <h2>How it works, in plain words</h2>
+      <p>Under the hood, a PDF is a collection of <strong>objects</strong> — like the pieces of a model kit:</p>
+      <ul class="article-list">
+        <li><strong>Pages</strong> define the size and orientation of each sheet (A4, Letter, etc.).</li>
+        <li><strong>Content streams</strong> are the drawing instructions for a page: "draw this text here, place that image there, stroke this line."</li>
+        <li><strong>Resources</strong> hold the fonts and images those instructions refer to.</li>
+        <li><strong>Metadata</strong> stores the title, author, dates and software that created the file.</li>
+        <li>A <strong>cross-reference table</strong> ("xref") works like an index, letting viewers jump straight to any object.</li>
+      </ul>
+      <p>The clever part: because pages are described as <em>instructions</em> rather than a single flattened image, a PDF stays crisp when zoomed in (the text is real text, not pixels), stays searchable, and stays surprisingly small — while still rendering identically everywhere. That's the balance that made it the world's document standard.</p>
+      <p>It also explains the tools on this site: since pages are instructions plus embedded images, we can re-encode those images to shrink a file (<a href="../">Compress</a>), pull pages apart (<a href="../split/">Split</a>), merge documents (<a href="../merge/">Merge</a>), or stamp new content on top (<a href="../watermark/">Watermark</a>) — all without a server, right in your browser.</p>
+    </section>
+
+    <section class="article-section" id="why-large">
+      <h2>Why are some PDFs so large?</h2>
+      <p>A PDF is only as small as what's inside it. Three things inflate file size more than anything else:</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>High-resolution images</h3>
+          <p>Scans and photos are often embedded at 300+ DPI. A single full-page scan can be several megabytes.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Embedded fonts</h3>
+          <p>Every font used may carry its full character set. A few fonts can add a megabyte or more.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Uncompressed content</h3>
+          <p>Some PDFs are saved without compression, or with inefficient settings — especially files from older scanners and office tools.</p>
+        </div>
+      </div>
+      <p>That's exactly the problem our <a href="../">PDF Compress</a> tool solves: it re-encodes pages in your browser, step by step, until the file hits the exact size you need — 100 KB for a government portal, 1 MB for email, whatever fits.</p>
+    </section>
+
+    <section class="article-section" id="faq">
+      <h2>Common questions</h2>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Is a PDF the same as an image?</summary>
+          <p>No — but it's close. A PDF page is drawn from instructions (real text, vector shapes, embedded images), so text stays selectable and searchable, and pages stay crisp when zoomed. An image (like a JPG) is just a fixed grid of pixels.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can anyone edit a PDF?</summary>
+          <p>PDFs are designed to be read, not casually edited — that's their strength for official documents. Dedicated tools (or a PDF editor) can modify them, and authors can even password-protect against changes, which our <a href="../protect/">Protect</a> tool can set up for you.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does PDF stand for anything?</summary>
+          <p>Portable Document Format. "Portable" because the file carries everything it needs — layout, fonts, images — with it, so it looks the same on any device.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who owns the PDF format?</summary>
+          <p>Nobody owns it anymore. Adobe created it, but since 2008 it's an open international standard (ISO 32000), maintained by the ISO. Anyone can implement it, which is why every operating system supports it.</p>
+        </details>
+      </div>
+    </section>
+
+    <p class="article-end">PDF Slim — every tool here runs 100% in your browser. <a href="../">Try compressing a PDF</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p style="margin-top:0;font-weight:600;color:var(--text)">PDF Slim</p>
+      <p class="footer-fine" style="margin-top:6px">No cookies. No tracking pixels. No uploads. Ever. · <a href="https://tally.so/r/PdW5lx" target="_blank" rel="noopener" style="color:var(--text-muted);text-decoration:underline">Feedback</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="../src/pages/article.js"></script>
+  <!-- Ko-fi floating tip button -->
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('yugutou', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Tip Me',
+      'floating-chat.donateButton.text-color': '#fff',
+      'floating-chat.donateButton.background-color': '#ff813f'
+    });
+  </script>
+</body>
+</html>
