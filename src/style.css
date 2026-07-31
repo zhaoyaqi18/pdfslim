@@ -848,6 +848,14 @@ body::before {
 .matrix-formats { font-size: 13.5px; color: var(--text-muted); }
 /* footer matrix row */
 .footer-matrix { margin-top: 6px; }
+/* tool pages: matrix sits inside the narrow 760px container */
+.matrix-toolpage .matrix-title { font-size: clamp(18px, 2vw, 22px); margin-bottom: 18px; }
+.matrix-toolpage .matrix-grid { gap: 12px; }
+.matrix-toolpage .matrix-card { padding: 14px 16px; gap: 4px; }
+.matrix-toolpage .matrix-name { font-size: 20px; }
+.matrix-toolpage .matrix-badge { font-size: 10px; padding: 1px 7px; }
+.matrix-toolpage .matrix-desc { font-size: 13px; line-height: 1.5; }
+.matrix-toolpage .matrix-formats { font-size: 12px; }
 @media (max-width: 940px) {
   .matrix-grid { grid-template-columns: 1fr; max-width: 560px; }
 }
