@@ -779,3 +779,78 @@ body::before {
 @media (max-width: 940px) {
   .trust-notes-grid { grid-template-columns: 1fr; }
 }
+
+/* ============ Matrix: more free tools ============ */
+.matrix-section { padding: 8px 0 16px; }
+.matrix-title {
+  text-align: center;
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+.matrix-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.matrix-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
+  border-color: var(--primary);
+}
+.matrix-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.matrix-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.matrix-compressio .matrix-name { color: #059669; }
+.matrix-headlinecap .matrix-name { color: #D97706; }
+.matrix-hidechar .matrix-name { color: #7C3AED; }
+[data-theme="dark"] .matrix-compressio .matrix-name { color: #34D399; }
+[data-theme="dark"] .matrix-headlinecap .matrix-name { color: #FBBF24; }
+[data-theme="dark"] .matrix-hidechar .matrix-name { color: #A78BFA; }
+.matrix-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+[data-theme="dark"] .matrix-badge { color: #34D399; }
+.matrix-desc { font-size: 14.5px; font-weight: 500; color: var(--text); line-height: 1.55; }
+.matrix-formats { font-size: 13.5px; color: var(--text-muted); }
+/* footer matrix row */
+.footer-matrix { margin-top: 6px; }
+@media (max-width: 940px) {
+  .matrix-grid { grid-template-columns: 1fr; max-width: 560px; }
+}
+@media (max-width: 640px) {
+  .matrix-grid { grid-template-columns: 1fr; max-width: none; }
+}
