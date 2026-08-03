@@ -663,6 +663,7 @@ kbd {
 @media (max-width: 940px) {
   .hero { padding: 36px 0 32px; }
   .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-grid > * { min-width: 0; }
   .hero-sub { max-width: none; }
 }
 
