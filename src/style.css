@@ -332,7 +332,37 @@ kbd {
   .btn-primary { width: 100%; justify-content: center; margin-left: 0; margin-top: 4px; }
   .custom-input { flex: 1; }
   .done-actions .btn-primary { width: auto; margin-top: 0; }
-  .trust, .notes { padding: 22px 18px; }
+  .trust, .notes { padding: 14px 12px; }
+  .trust h2, .notes h2 { font-size: 15px; }
+  .trust > p { font-size: 11px; line-height: 1.45; margin-top: 6px; }
+  .verify-box { padding: 10px 12px; }
+  .verify-title { font-size: 12px; }
+  .verify-box ol { margin: 6px 0 0 18px; }
+  .verify-box li { font-size: 11px; }
+  .note-grid { margin-top: 8px; gap: 8px; }
+  .note-card { padding: 10px 12px; }
+  .note-card h3 { font-size: 12px; }
+  .note-card p { font-size: 10.5px; line-height: 1.4; margin-top: 3px; }
+  /* FAQ (trust/notes 板块内) 压缩 */
+  .faq-list { margin-top: 10px; gap: 8px; }
+  .faq-item > summary { padding: 10px 12px; font-size: 12px; }
+  .faq-item > summary::after { font-size: 15px; }
+  .faq-item > p { padding: 10px 12px; font-size: 11px; line-height: 1.5; }
+  .faq-item > p kbd { font-size: 10px; }
+
+  /* Target size presets: 两排等宽, 不再横向滚动 */
+  .preset-group { flex-wrap: wrap; overflow-x: visible; gap: 6px; }
+  .preset { flex: 1 1 calc(25% - 8px); min-width: 0; padding: 6px 4px; font-size: 12px; text-align: center; }
+
+  /* Hero 压缩 (仅手机端, 全部 sm: 恢复桌面原值) */
+  .hero { padding: 22px 0 18px; }
+  .hero h1 { margin-top: 10px; }
+  .hero-sub { margin-top: 10px; font-size: 13px; line-height: 1.5; }
+  .hero-features { margin-top: 14px; gap: 10px 16px; }
+  .hero-features strong { font-size: 12px; }
+  .hero-features span { font-size: 11px; }
+  .hero-link { margin-top: 12px; font-size: 13px; }
+  .hero-badge { padding: 4px 10px; font-size: 11px; }
 }
 
 /* ============ Tool pages (merge/split/convert/rotate) ============ */
@@ -666,6 +696,16 @@ kbd {
   .hero-grid > * { min-width: 0; }
   .hero-sub { max-width: none; }
 }
+@media (min-width: 641px) {
+  /* 恢复桌面 hero 基准值 */
+  .hero h1 { margin-top: 18px; }
+  .hero-sub { margin-top: 16px; font-size: 17px; line-height: normal; }
+  .hero-features { margin-top: 26px; gap: 14px 20px; }
+  .hero-features strong { font-size: 14px; }
+  .hero-features span { font-size: 12.5px; }
+  .hero-link { margin-top: 22px; font-size: 14.5px; }
+  .hero-badge { padding: 6px 13px; font-size: 13px; }
+}
 
 /* ---------- section labels & titles ---------- */
 .section-label { text-align: center; font-size: 12.5px; font-weight: 800; letter-spacing: 0.14em; color: var(--primary); }
@@ -698,8 +738,12 @@ kbd {
 .tool-tile:hover .tile-arrow { opacity: 1; transform: none; }
 @media (max-width: 940px) { .tools-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) {
-  .tools-grid { grid-template-columns: 1fr; }
-  .tile-arrow { opacity: 1; transform: none; }
+  .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .tool-tile { padding: 14px 12px 16px; gap: 6px; border-radius: 12px; }
+  .tile-icon { width: 32px; height: 32px; }
+  .tool-tile strong { font-size: 12px; }
+  .tile-desc { font-size: 11px; line-height: 1.4; }
+  .tile-arrow { opacity: 1; transform: none; right: 12px; bottom: 10px; }
 }
 
 /* ---------- features band ---------- */
@@ -719,7 +763,7 @@ kbd {
 .feature strong { font-size: 14.5px; color: var(--heading); display: block; }
 .feature p { font-size: 12.5px; color: var(--text-muted); margin-top: 3px; line-height: 1.5; }
 @media (max-width: 940px) { .features-row { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .features-row { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .features-row { grid-template-columns: 1fr 1fr; gap: 10px; } .feature { gap: 8px; } .feature-icon { width: 30px; height: 30px; } .feature-icon svg { width: 15px; height: 15px; } .feature strong { font-size: 12px; } .feature p { font-size: 10px; line-height: 1.4; margin-top: 2px; } }
 
 /* ---------- live counter band ---------- */
 .counter-band { text-align: center; padding: 40px 0 8px; }
@@ -862,4 +906,15 @@ body::before {
 }
 @media (max-width: 640px) {
   .matrix-grid { grid-template-columns: 1fr; max-width: none; }
+  .matrix-card { padding: 12px 14px; gap: 4px; }
+  .matrix-name { font-size: 17px; }
+  .matrix-badge { font-size: 9px; padding: 1px 6px; }
+  .matrix-desc { font-size: 12px; line-height: 1.45; }
+  .matrix-formats { font-size: 11px; }
+  /* 子页面 matrix-toolpage 同样压缩 */
+  .matrix-toolpage .matrix-card { padding: 10px 12px; gap: 3px; }
+  .matrix-toolpage .matrix-name { font-size: 16px; }
+  .matrix-toolpage .matrix-badge { font-size: 9px; padding: 1px 6px; }
+  .matrix-toolpage .matrix-desc { font-size: 11.5px; line-height: 1.45; }
+  .matrix-toolpage .matrix-formats { font-size: 11px; }
 }
