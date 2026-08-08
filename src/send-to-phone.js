@@ -2,7 +2,7 @@
 // Usage: sendToPhone({ name: 'file.pdf', getFile: async () => blob })
 // Shows a QR modal, connects via WebRTC, transfers the file peer-to-peer.
 
-const SIGNAL_URL = 'wss://pdfslim-signal.2782255188.workers.dev/room';
+const SIGNAL_URL = 'wss://signal.pdfslim.app/room';
 const QRJS_URL = 'https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js';
 const CHUNK_SIZE = 64 * 1024;
 

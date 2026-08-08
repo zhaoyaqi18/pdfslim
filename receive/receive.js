@@ -1,7 +1,7 @@
 // PDF Slim — mobile receive page (WebRTC receiver)
 // Scanned QR → this page with ?room=XXXXXX → peer-to-peer receive
 
-const SIGNAL_URL = 'wss://pdfslim-signal.2782255188.workers.dev/room';
+const SIGNAL_URL = 'wss://signal.pdfslim.app/room';
 const CHUNK_SIZE = 64 * 1024;
 
 const $ = (id) => document.getElementById(id);
