@@ -3,6 +3,7 @@ import * as pdfjsLib from 'pdfjs-dist';
 import JSZip from 'jszip';
 import { compressToTarget } from './compressor.js';
 import { initDelight, addProcessedBytes, celebrate, downloadBytes } from './shared.js';
+import { sendToPhone } from './send-to-phone.js';
 
 initDelight();
 
@@ -64,6 +65,7 @@ const resultSaved = document.getElementById('result-saved');
 const batchResultList = document.getElementById('batch-result-list');
 const resultNote = document.getElementById('result-note');
 const downloadBtn = document.getElementById('download-btn');
+const sendPhoneBtn = document.getElementById('send-phone-btn');
 const downloadZipBtn = document.getElementById('download-zip-btn');
 const againBtn = document.getElementById('again-btn');
 const resizeGroup = document.getElementById('resize-group');
@@ -537,6 +539,16 @@ function showDone(bytes, meta) {
   batchResultList.hidden = true;
   downloadBtn.hidden = false;
   downloadZipBtn.hidden = true;
+
+  // Send to phone (single-file mode only)
+  sendPhoneBtn.hidden = false;
+  sendPhoneBtn.onclick = () => {
+    // bytes 是本函数生成的压缩结果（可信内部数据），name 来自文件名经 .pdf 后缀剥离
+    sendToPhone({
+      name: outName,
+      getFile: async () => new Blob([bytes], { type: 'application/pdf' }),
+    });
+  };
 
   doneTitle.textContent = meta.alreadySmall
     ? 'Already under the target — nicely done.'

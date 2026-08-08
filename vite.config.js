@@ -25,6 +25,7 @@ export default defineConfig({
         ['page-numbers', resolve(__dirname, 'page-numbers/index.html')],
         ['organize', resolve(__dirname, 'organize/index.html')],
         ['remove-metadata', resolve(__dirname, 'remove-metadata/index.html')],
+        ['receive', resolve(__dirname, 'receive/index.html')],
         ['what-is-pdf', resolve(__dirname, 'what-is-pdf/index.html')],
         ...seoPages.map((name) => [name, resolve(__dirname, `${name}/index.html`)]),
       ]),
